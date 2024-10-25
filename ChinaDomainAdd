@@ -1,0 +1,4 @@
+# 补充不在ChinaDomain.list但需要直连的名单
+DOMAIN-SUFFIX,cocos.com
+DOMAIN-SUFFIX,cocos.org
+DOMAIN-KEYWORD,cocos
