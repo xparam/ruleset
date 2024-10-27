@@ -1,4 +1,14 @@
 # 补充不在ChinaDomain.list但需要直连的名单
+# DOMAIN 完全匹配域名，例如 DOMAIN,google.com 匹配 google.com，但不匹配 www.google.com。
+# DOMAIN-SUFFIX 匹配域名后缀，例如 DOMAIN-SUFFIX,google.com 匹配 google.com 和 www.google.com。
+# DOMAIN-KEYWORD 关键词匹配域名，例如 DOMAIN-KEYWORD,google 匹配 google.com 和 google.jp。
+# GEOIP 通过 MaxMind GeoIP 匹配国家代码，例如 GEOIP,CN。可以添加 no-resolve 以避免触发 DNS 解析。
+# IP-ASN 通过 IP 自治系统编号匹配，例如 IP-ASN,714。可以添加 no-resolve 以避免触发 DNS 解析。
+# IP-CIDR/IP-CIDR6 通过IP/CIDR范围匹配，例如 IP-CIDR,192.168.1.0/24。可以添加 no-resolve 以避免触发 DNS 解析。
+
 DOMAIN-SUFFIX,cocos.com
 DOMAIN-SUFFIX,cocos.org
 DOMAIN-KEYWORD,cocos
+
+DOMAIN-SUFFIX,ab.shkt.online
+DOMAIN-SUFFIX,shkt.online
