@@ -16,7 +16,7 @@ DOMAIN-SUFFIX,shkt.online
 DOMAIN-SUFFIX,aquashield-ips.com
 #微信小游戏-百炼英雄
 DOMAIN-SUFFIX,forevernine.com
-#英伟达
+#英伟达GeForce Experience(FakeIP模式需要直连，如果是真实IP可以走代理)
 DOMAIN-SUFFIX,nvidia.com
 
 # 内容：中国大陆常见的域名
