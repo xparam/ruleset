@@ -6,6 +6,7 @@
 # IP-ASN 通过 IP 自治系统编号匹配，例如 IP-ASN,714。可以添加 no-resolve 以避免触发 DNS 解析。
 # IP-CIDR/IP-CIDR6 通过IP/CIDR范围匹配，例如 IP-CIDR,192.168.1.0/24。可以添加 no-resolve 以避免触发 DNS 解析。
 
+#自定义添加
 #COCOS引擎论坛
 DOMAIN-SUFFIX,cocos.org
 DOMAIN-KEYWORD,cocos
@@ -14,12 +15,16 @@ DOMAIN-SUFFIX,ab.shkt.online
 DOMAIN-SUFFIX,shkt.online
 #飞利浦净水器
 DOMAIN-SUFFIX,aquashield-ips.com
-#微信小游戏-百炼英雄
-DOMAIN-SUFFIX,forevernine.com
 #英伟达GeForce Experience(FakeIP模式需要直连，如果是真实IP可以走代理)
 DOMAIN-SUFFIX,nvidia.com
 #中银保险有限公司
 DOMAIN-SUFFIX,bocins.com
+
+#自定义添加-微信小游戏
+#百炼英雄
+DOMAIN-SUFFIX,forevernine.com
+#开局已是巅峰
+DOMAIN-SUFFIX,dengdengkeji.com
 
 # 内容：中国大陆常见的域名
 # 来源：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ChinaDomain.list
