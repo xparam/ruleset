@@ -5,7 +5,7 @@ ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,services.googleapis.cn
 ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
 ruleset=🚀 节点选择,https://raw.githubusercontent.com/xparam/ruleset/main/Proxy.list
-;需要屏蔽的链接
+;需要屏蔽的链接，因为我需要看微信小游戏的广告，所以暂时屏蔽
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 ;需要直连的链接
