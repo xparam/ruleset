@@ -10,3 +10,7 @@
 #暴雪国际服
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,battle.com
+
+#海外药店Pharmacy Online (澳大利亚)
+DOMAIN-SUFFIX,pharmacyonline.com
+DOMAIN-KEYWORD,pharmacyonline
