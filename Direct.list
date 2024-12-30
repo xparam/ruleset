@@ -29,6 +29,8 @@ DOMAIN-SUFFIX,forevernine.com
 DOMAIN-SUFFIX,dengdengkeji.com
 #荒村客栈
 DOMAIN-SUFFIX,redraingame.com
+#挂机小英雄
+DOMAIN-SUFFIX,game9012.com
 
 # 内容：中国大陆常见的域名
 # 来源：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ChinaDomain.list
