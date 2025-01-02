@@ -34,6 +34,9 @@ DOMAIN-SUFFIX,game9012.com
 #异世界战斗无止境
 DOMAIN-SUFFIX,jinkezhexin.top
 DOMAIN-SUFFIX,bjdifeiya.com
+#银河战舰
+DOMAIN-SUFFIX,huchihuchi.com
+DOMAIN-SUFFIX,haju.com
 
 # 内容：中国大陆常见的域名
 # 来源：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ChinaDomain.list
