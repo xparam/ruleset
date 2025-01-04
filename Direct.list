@@ -39,6 +39,8 @@ DOMAIN-SUFFIX,huchihuchi.com
 DOMAIN-SUFFIX,haju.com
 #不休的乌拉拉
 DOMAIN-SUFFIX,funnyrpg.com
+#最强祖师
+DOMAIN-SUFFIX,xw66.top
 
 # 内容：中国大陆常见的域名
 # 来源：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ChinaDomain.list
