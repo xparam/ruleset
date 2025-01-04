@@ -41,6 +41,8 @@ DOMAIN-SUFFIX,haju.com
 DOMAIN-SUFFIX,funnyrpg.com
 #最强祖师
 DOMAIN-SUFFIX,xw66.top
+#机械纪元
+DOMAIN-SUFFIX,fdsf675.com
 
 # 内容：中国大陆常见的域名
 # 来源：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ChinaDomain.list
