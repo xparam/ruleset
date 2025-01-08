@@ -49,6 +49,8 @@ DOMAIN-SUFFIX,zxzgame.com
 #绝地幸存
 DOMAIN-SUFFIX,jingyougz.com
 DOMAIN-SUFFIX,greatgood666.com
+#修真五百年
+DOMAIN-SUFFIX,jtjoy.com
 
 # 内容：中国大陆常见的域名
 # 来源：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ChinaDomain.list
