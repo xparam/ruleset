@@ -25,34 +25,7 @@ DOMAIN-SUFFIX,98kjsq.com
 DOMAIN-SUFFIX,easebar.com
 
 #自定义添加-微信小游戏
-#百炼英雄
-DOMAIN-SUFFIX,forevernine.com
-#开局已是巅峰
-DOMAIN-SUFFIX,dengdengkeji.com
-#荒村客栈
-DOMAIN-SUFFIX,redraingame.com
-#挂机小英雄
-DOMAIN-SUFFIX,game9012.com
-#异世界战斗无止境
-DOMAIN-SUFFIX,jinkezhexin.top
-DOMAIN-SUFFIX,bjdifeiya.com
-#银河战舰
-DOMAIN-SUFFIX,huchihuchi.com
-DOMAIN-SUFFIX,haju.com
-#不休的乌拉拉
-DOMAIN-SUFFIX,funnyrpg.com
-#最强祖师
-DOMAIN-SUFFIX,xw66.top
-#机械纪元
-DOMAIN-SUFFIX,fdsf675.com
-DOMAIN-SUFFIX,uu89.com
-#兽王碎雷霆
-DOMAIN-SUFFIX,zxzgame.com
-#绝地幸存
-DOMAIN-SUFFIX,jingyougz.com
-DOMAIN-SUFFIX,greatgood666.com
-#修真五百年
-DOMAIN-SUFFIX,jtjoy.com
+#已通过clash自带规则集实现，方便即存即用，避免每次都需要更新链接
 
 # 内容：中国大陆常见的域名
 # 来源：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/ChinaDomain.list
