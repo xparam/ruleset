@@ -29,7 +29,7 @@ custom_proxy_group=🇹🇼台湾`url-test`台湾`http://www.gstatic.com/generat
 custom_proxy_group=🇰🇷韩国`url-test`韩国`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇯🇵日本`url-test`日本`http://www.gstatic.com/generate_204`300,,50
 ;东南亚
-custom_proxy_group=🇵🇭菲律宾`url-test`菲律宾`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇵🇭菲律宾`url-test`菲律宾`🇵🇭 菲律宾`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇻🇳越南`url-test`越南`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇹🇭泰国`url-test`泰国`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇲🇾马来西亚`url-test`马来西亚`http://www.gstatic.com/generate_204`300,,50
