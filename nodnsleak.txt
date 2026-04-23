@@ -4,7 +4,6 @@
 ruleset=🚀 指定出站,[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 ruleset=🚀 指定出站,[]DOMAIN-SUFFIX,services.googleapis.cn
 ruleset=🚀 指定出站,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
-;ruleset=🚀 指定出站,https://raw.githubusercontent.com/xparam/ruleset/main/Proxy.list
 ;需要屏蔽的链接，因为我需要看微信小游戏的广告，所以暂时屏蔽
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
@@ -16,112 +15,43 @@ ruleset=🚀 指定出站,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
 ;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ;ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/Direct.list
+;指定设备指定域名的直连列表，比如电脑访问Trae.ai会连接TikTok。
+ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/Direct_Special.list
+;ruleset=🏠 静态住宅,https://raw.githubusercontent.com/xparam/ruleset/main/Proxy_SRIP.list
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ;最后全部代理
 ruleset=🚀 指定出站,[]FINAL
 
-custom_proxy_group=🚀 指定出站`select`[]DIRECT`[]🇭🇰香港`[]🇹🇼台湾`[]🇯🇵日本`[]🇸🇬新加坡`[]🇺🇸美国`[]🇬🇧英国`[]🇲🇾马来西亚`[]🇹🇷土耳其`[]🇦🇷阿根廷`.*
-;custom_proxy_group=🚀 指定出站`select`[]DIRECT`[]🇭🇰香港`[]🇹🇼台湾`[]🇯🇵日本`[]🇰🇷韩国`[]🇸🇬新加坡`[]🇺🇸美国`[]🇬🇧英国`[]🇲🇾马来西亚`[]🇹🇷土耳其`[]🇦🇷阿根廷`.*
-;custom_proxy_group=♻️ 最快节点`url-test`.*`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=📌 固定节点`select`.*
+;custom_proxy_group=🏠 静态住宅`select`住宅`http://www.gstatic.com/generate_204`300
+custom_proxy_group=🚀 指定出站`select`[]DIRECT`[]🇭🇰香港`[]🇯🇵日本`[]🇸🇬新加坡`[]🇺🇸美国`♻️ 最快节点`.*
 
-;以下曾用于多地区节点的机场，比如byg，但目前已经替换为地区较少的机场，所以对部分进行屏蔽
-;东亚
 custom_proxy_group=🇭🇰香港`url-test`香港`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=🇹🇼台湾`url-test`台湾`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇰🇷韩国`url-test`韩国`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🇹🇼台湾`url-test`(?i)台湾`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇯🇵日本`url-test`日本`http://www.gstatic.com/generate_204`300,,50
-;东南亚
-;custom_proxy_group=🇵🇭菲律宾`url-test`菲律宾`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇻🇳越南`url-test`越南`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇹🇭泰国`url-test`泰国`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=🇲🇾马来西亚`url-test`马来西亚`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇸🇬新加坡`url-test`新加坡`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇮🇩印度尼西亚`url-test`印度尼西亚`http://www.gstatic.com/generate_204`300,,50
-;南亚
-;custom_proxy_group=🇳🇵尼泊尔`url-test`尼泊尔`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇮🇳印度`url-test`印度`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇵🇰巴基斯坦`url-test`巴基斯坦`http://www.gstatic.com/generate_204`300,,50
-;中亚
-;custom_proxy_group=🇰🇿哈萨克斯坦`url-test`哈萨克斯坦`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇺🇿乌兹别克斯坦`url-test`乌兹别克斯坦`http://www.gstatic.com/generate_204`300,,50
-;西亚
-custom_proxy_group=🇹🇷土耳其`url-test`土耳其`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇨🇾塞浦路斯`url-test`塞浦路斯`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇮🇱以色列`url-test`以色列`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇮🇶伊拉克`url-test`伊拉克`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇴🇲阿曼`url-test`阿曼`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇸🇦沙特阿拉伯`url-test`沙特阿拉伯`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇦🇪阿联酋`url-test`阿拉伯联合酋长国`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇶🇦卡塔尔`url-test`卡塔尔`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇬🇪格鲁吉亚`url-test`格鲁吉亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇦🇲亚美尼亚`url-test`亚美尼亚`http://www.gstatic.com/generate_204`300,,50
-
-;北美
 custom_proxy_group=🇺🇸美国`url-test`美国`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇨🇦加拿大`url-test`加拿大`http://www.gstatic.com/generate_204`300,,50
-;中美
-;custom_proxy_group=🇲🇽墨西哥`url-test`墨西哥`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇬🇹危地马拉`url-test`危地马拉`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇨🇷哥斯达黎加`url-test`哥斯达黎加`http://www.gstatic.com/generate_204`300,,50
-;南美
-;custom_proxy_group=🇧🇷巴西`url-test`巴西`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇨🇴哥伦比亚`url-test`哥伦比亚`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=🇦🇷阿根廷`url-test`阿根廷`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇵🇪秘鲁`url-test`秘鲁`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇨🇱智利`url-test`智利`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇪🇨厄瓜多尔`url-test`厄瓜多尔`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇧🇴玻利维亚`url-test`玻利维亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇺🇾乌拉圭`url-test`乌拉圭`http://www.gstatic.com/generate_204`300,,50
 
-;北欧
-;custom_proxy_group=🇩🇰丹麦`url-test`丹麦`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇳🇴挪威`url-test`挪威`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇫🇮芬兰`url-test`芬兰`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇸🇪瑞典`url-test`瑞典`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇮🇸冰岛`url-test`冰岛`http://www.gstatic.com/generate_204`300,,50
-;南欧
-;custom_proxy_group=🇮🇹意大利`url-test`意大利`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇪🇸西班牙`url-test`西班牙`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇵🇹葡萄牙`url-test`葡萄牙`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇭🇷克罗地亚`url-test`克罗地亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇧🇬保加利亚`url-test`保加利亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇬🇷希腊`url-test`希腊`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇷🇴罗马尼亚`url-test`罗马尼亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇲🇰马其顿`url-test`马其顿`http://www.gstatic.com/generate_204`300,,50
-;东欧
-;custom_proxy_group=🇪🇪爱沙尼亚`url-test`爱沙尼亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇱🇹立陶宛`url-test`立陶宛`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇷🇺俄罗斯`url-test`俄罗斯`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇲🇩摩尔多瓦`url-test`摩尔多瓦`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇷🇸塞尔维亚`url-test`塞尔维亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇸🇮斯洛文尼亚`url-test`斯洛文尼亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇱🇻拉脱维亚`url-test`拉脱维亚`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇺🇦乌克兰`url-test`乌克兰`http://www.gstatic.com/generate_204`300,,50
-;西欧
-custom_proxy_group=🇬🇧英国`url-test`英国`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇮🇪爱尔兰`url-test`爱尔兰`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇳🇱荷兰`url-test`荷兰`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇧🇪比利时`url-test`比利时`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇱🇺卢森堡`url-test`卢森堡`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇫🇷法国`url-test`法国`http://www.gstatic.com/generate_204`300,,50
-;中欧
-;custom_proxy_group=🇩🇪德国`url-test`德国`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇵🇱波兰`url-test`波兰`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇨🇭瑞士`url-test`瑞士`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇦🇹奥地利`url-test`奥地利`http://www.gstatic.com/generate_204`300,,50
+;最快节点
+custom_proxy_group=♻️ 最快节点`url-test`.*`http://www.gstatic.com/generate_204`300,,50
 
-;非洲
-;custom_proxy_group=🇿🇦南非`url-test`南非`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇪🇬埃及`url-test`埃及`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇲🇦摩洛哥`url-test`摩洛哥`http://www.gstatic.com/generate_204`300,,50
-;custom_proxy_group=🇳🇬尼日利亚`url-test`尼日利亚`http://www.gstatic.com/generate_204`300,,50
-
-;澳洲
-;custom_proxy_group=🇦🇺澳大利亚`url-test`澳大利亚`http://www.gstatic.com/generate_204`300,,50
-
-;大洋洲
-;custom_proxy_group=🇳🇿新西兰`url-test`新西兰`http://www.gstatic.com/generate_204`300,,50
+;地区名单
+;东亚
+;东亚    🇭🇰香港🇹🇼台湾🇰🇷韩国🇯🇵日本
+;东南亚  🇵🇭菲律宾🇻🇳越南🇹🇭泰国🇲🇾马来西亚🇸🇬新加坡
+;南亚    🇮🇩印度尼西亚🇳🇵尼泊尔🇮🇳印度🇵🇰巴基斯坦
+;中亚    🇰🇿哈萨克斯坦🇺🇿乌兹别克斯坦
+;西亚    🇹🇷土耳其🇨🇾塞浦路斯🇮🇱以色列🇮🇶伊拉克🇴🇲阿曼🇸🇦沙特阿拉伯🇦🇪阿联酋🇶🇦卡塔尔🇬🇪格鲁吉亚🇦🇲亚美尼亚
+;北美    🇺🇸美国🇨🇦加拿大
+;中美    🇲🇽墨西哥🇬🇹危地马拉🇨🇷哥斯达黎加
+;南美    🇧🇷巴西🇨🇴哥伦比亚🇦🇷阿根廷🇵🇪秘鲁🇨🇱智利🇪🇨厄瓜多尔🇧🇴玻利维亚🇺🇾乌拉圭
+;北欧    🇩🇰丹麦🇳🇴挪威🇫🇮芬兰🇸🇪瑞典🇮🇸冰岛
+;南欧    🇮🇹意大利🇪🇸西班牙🇵🇹葡萄牙🇭🇷克罗地亚🇧🇬保加利亚🇬🇷希腊🇷🇴罗马尼亚🇲🇰马其顿
+;东欧    🇪🇪爱沙尼亚🇱🇹立陶宛🇷🇺俄罗斯🇲🇩摩尔多瓦🇷🇸塞尔维亚🇸🇮斯洛文尼亚🇱🇻拉脱维亚🇺🇦乌克兰
+;西欧    🇬🇧英国🇮🇪爱尔兰🇳🇱荷兰🇧🇪比利时🇱🇺卢森堡🇫🇷法国
+;中欧    🇩🇪德国🇵🇱波兰🇨🇭瑞士🇦🇹奥地利
+;非洲    🇿🇦南非🇪🇬埃及🇲🇦摩洛哥🇳🇬尼日利亚
+;澳洲    🇦🇺澳大利亚
+;大洋洲  🇳🇿新西兰
 
 enable_rule_generator=true
 overwrite_original_rules=true
