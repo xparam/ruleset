@@ -15,8 +15,6 @@ ruleset=🚀 指定出站,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
 ;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ;ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/Direct.list
-;指定设备指定域名的直连列表，比如电脑访问Trae.ai会连接TikTok。
-ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/Direct_Special.list
 ;ruleset=🏠 静态住宅,https://raw.githubusercontent.com/xparam/ruleset/main/Proxy_SRIP.list
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ;最后全部代理
