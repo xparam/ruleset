@@ -15,6 +15,7 @@ ruleset=🚀 指定出站,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
 ;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ;ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/Direct.list
+;从这里查看https://github.com/v2ray/domain-list-community/tree/master/data
 ruleset=🏠 静态住宅,[]GEOSITE,paypal
 ruleset=🏠 静态住宅,[]GEOSITE,openai
 ruleset=🏠 静态住宅,[]GEOSITE,anthropic
