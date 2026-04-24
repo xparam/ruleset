@@ -16,7 +16,7 @@ ruleset=🚀 指定出站,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ;ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/Direct.list
 ruleset=🏠 静态住宅,https://raw.githubusercontent.com/xparam/ruleset/main/Proxy_SRIP.list
-ruleset=DIRECT,[]DOMAIN-SUFFIX,^cn\..*|.*\.cn\..*|.*\.cn$
+ruleset=DIRECT,[]DOMAIN-REGEX,^cn\..*|.*\.cn\..*|.*\.cn$
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ;最后全部代理
 ruleset=🚀 指定出站,[]FINAL
