@@ -1,39 +1,31 @@
 [custom]
-;解决DNS泄露
-;需要代理的链接
 ruleset=🚀 指定出站,[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 ruleset=🚀 指定出站,[]DOMAIN-SUFFIX,services.googleapis.cn
 ruleset=🚀 指定出站,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
-;需要屏蔽的链接，因为我需要看微信小游戏的广告，所以暂时屏蔽
+;拒绝
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-;需要直连的链接
-;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
-;ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-;ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/Direct.list
-;从这里查看https://github.com/v2ray/domain-list-community/tree/master/data
-ruleset=🏠 静态住宅,[]GEOSITE,paypal
-ruleset=🏠 静态住宅,[]GEOSITE,openai
-ruleset=🏠 静态住宅,[]GEOSITE,anthropic
+;直连
+;ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/AI_Custom.list
+;从这里查找标签https://github.com/v2ray/domain-list-community/tree/master/data
+;ruleset=🏠 静态住宅,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+;ruleset=🏠 静态住宅,[]GEOSITE,paypal
+;ruleset=🏠 静态住宅,[]GEOSITE,openai
+;ruleset=🏠 静态住宅,[]GEOSITE,anthropic
 ruleset=DIRECT,[]DOMAIN-REGEX,^cn\..*|.*\.cn\..*|.*\.cn$
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
-;最后全部代理
 ruleset=🚀 指定出站,[]FINAL
 
+;节点组-手动选择
 custom_proxy_group=🏠 静态住宅`select`住宅`http://www.gstatic.com/generate_204`300
 custom_proxy_group=🚀 指定出站`select`[]DIRECT`[]🇭🇰香港`[]🇯🇵日本`[]🇸🇬新加坡`[]🇺🇸美国`.*`[]♻️ 最快节点`[]🏠 静态住宅
 
+;节点组-自动测速
 custom_proxy_group=🇭🇰香港`url-test`香港`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇹🇼台湾`url-test`台湾`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇯🇵日本`url-test`日本`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇸🇬新加坡`url-test`新加坡`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇺🇸美国`url-test`美国`http://www.gstatic.com/generate_204`300,,50
-
-;最快节点
 custom_proxy_group=♻️ 最快节点`url-test`.*`http://www.gstatic.com/generate_204`300,,50
 
 ;地区名单
