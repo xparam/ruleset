@@ -5,13 +5,13 @@ ruleset=🚀 指定出站,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ;拒绝
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ;ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-;直连
-;ruleset=DIRECT,https://raw.githubusercontent.com/xparam/ruleset/main/AI_Custom.list
-;从这里查找标签https://github.com/v2ray/domain-list-community/tree/master/data
+;代理(高质量)，可以从这里查找GEO标签https://github.com/v2ray/domain-list-community/tree/master/data
+;ruleset=🏠 静态住宅,https://raw.githubusercontent.com/xparam/ruleset/main/AI_Custom.list
 ;ruleset=🏠 静态住宅,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
 ;ruleset=🏠 静态住宅,[]GEOSITE,paypal
 ;ruleset=🏠 静态住宅,[]GEOSITE,openai
 ;ruleset=🏠 静态住宅,[]GEOSITE,anthropic
+;直连，必须开启内核绕中国大陆
 ruleset=DIRECT,[]DOMAIN-REGEX,^cn\..*|.*\.cn\..*|.*\.cn$
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=🚀 指定出站,[]FINAL
